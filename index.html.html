@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        input{
+            padding: 15px 32px;
+            text-align: center;
+            margin: 4px 2px;
+        }
+
+        ul{
+            margin-left: 500px;
+        }
+        ul li{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script src="project2.js"></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+            <ul id="itemsList">
+                <li>Item1</li> 
+                <li id="number2">Item2</li> 
+                <li>Item3</li>            
+            </ul> 
+            <button onclick="addFunction()">Add</button>
+            <button onclick="removeFunction()">Remove</button>
+
+
+            <input id="changeIt" name="element-for-change" class="new-input"
+            type="text" value="Change me"/>
+            <button onclick="changeTextFunction()">Change Text</button>
+            <button onclick="changeWidthFunction()">Change Width</button>
+
+
+            <button onclick="siblingParent()">Select Parent Element</button>
+            <button onclick="siblingPrevious()">Select Previous Element</button>
+            <button onclick="siblingNext()">Select Next Element</button>
+            <button onclick="allKidsFunction()">Select All Kids To the Element</button>
+            
+
+            <button onclick="func()" 
+             
+            id="button-change-events">Change Color</button>
+            <button onclick="now()">Change Style</button>
+            <button onclick="reset()">Return Style</button>
+            
+    
+</body>
+</html>
